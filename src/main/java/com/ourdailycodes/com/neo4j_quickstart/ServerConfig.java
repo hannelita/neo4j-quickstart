@@ -7,7 +7,7 @@ public class ServerConfig {
 	
 	public static void main(String[] args) throws InterruptedException {
 		GraphDatabaseService graphDb = new GraphDatabaseFactory().newEmbeddedDatabase( "database" );
-		registerShutdownHook( graphDb );
+		//registerShutdownHook( graphDb );
 	}
 	
 	private static void registerShutdownHook( final GraphDatabaseService graphDb )
